@@ -1,1 +1,1 @@
-# slurm-tutorial
+# Slurm Tutorial
