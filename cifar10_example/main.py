@@ -74,7 +74,7 @@ def train(epoch):
         correct += predicted.eq(targets).sum().item()
 
         if batch_idx % 10 == 0:
-            print(f'\t[{batch_idx}/{len(trainloader)}] Loss: {loss.item():.3f} | Acc: {100.*correct/total:.3f}%')
+            print(f'[{batch_idx}/{len(trainloader)}] Loss: {loss.item():.3f} | Acc: {100.*correct/total:.3f}%')
 
 
 def test(epoch):
@@ -95,7 +95,7 @@ def test(epoch):
             correct += predicted.eq(targets).sum().item()
 
             if batch_idx % 10 == 0:
-                print(f'\t[{batch_idx}/{len(testloader)}] Loss: {loss.item():.3f} | Acc: {100.*correct/total:.3f}%')
+                print(f'[{batch_idx}/{len(testloader)}] Loss: {loss.item():.3f} | Acc: {100.*correct/total:.3f}%')
 
     # Save checkpoint.
     acc = 100.*correct/total
